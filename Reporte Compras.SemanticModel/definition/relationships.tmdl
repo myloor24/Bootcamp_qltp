@@ -1,0 +1,15 @@
+relationship 1a8a5086-8b65-4be5-ab09-3c0efd4df175
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Fact_Compras.fecha_orden
+	toColumn: LocalDateTable_58ebd6b1-58ef-47fc-8a80-3e6178a0d521.Date
+
+relationship 73ec10a5-6a19-4d6e-99d9-2040932d30c7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Fact_Compras.fecha_envio
+	toColumn: LocalDateTable_e4e63bff-4a62-47bc-a0cc-9c63c8261921.Date
+
+relationship 9ff24a0b-be55-4b24-8181-b1f372bf37df
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Fact_Compras.fecha_carga
+	toColumn: LocalDateTable_39f81955-34dd-49d4-bced-3b3b02fc1545.Date
+

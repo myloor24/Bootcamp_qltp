@@ -1,0 +1,205 @@
+table Fact_Compras
+	lineageTag: dd9ad57f-9a13-4d42-af32-3140b3497141
+
+	column periodo
+		dataType: string
+		lineageTag: b40aba42-4dfd-449b-95a1-266b36688d88
+		summarizeBy: none
+		sourceColumn: periodo
+
+		annotation SummarizationSetBy = Automatic
+
+	column factura
+		dataType: string
+		lineageTag: fd3bd12a-c74a-4011-bbaf-7f44d829f06b
+		summarizeBy: none
+		sourceColumn: factura
+
+		annotation SummarizationSetBy = Automatic
+
+	column venta_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7bcade37-548f-4083-b6c3-c6bad882b5af
+		summarizeBy: sum
+		sourceColumn: venta_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_orden
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 208fe8cc-49f3-4312-8e95-f84613a8e29e
+		summarizeBy: none
+		sourceColumn: fecha_orden
+
+		variation Variación
+			isDefault
+			relationship: 1a8a5086-8b65-4be5-ab09-3c0efd4df175
+			defaultHierarchy: LocalDateTable_58ebd6b1-58ef-47fc-8a80-3e6178a0d521.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fecha_envio
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1d5b1aec-3189-4815-8122-d2d8a89eb5a3
+		summarizeBy: none
+		sourceColumn: fecha_envio
+
+		variation Variación
+			isDefault
+			relationship: 73ec10a5-6a19-4d6e-99d9-2040932d30c7
+			defaultHierarchy: LocalDateTable_e4e63bff-4a62-47bc-a0cc-9c63c8261921.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dias_envio
+		dataType: int64
+		formatString: 0
+		lineageTag: edf29e08-4191-46c1-8a61-28ce3e05702e
+		summarizeBy: sum
+		sourceColumn: dias_envio
+
+		annotation SummarizationSetBy = Automatic
+
+	column estado
+		dataType: string
+		lineageTag: 9a35e338-b965-4c78-9fa4-25d853d4c80c
+		summarizeBy: none
+		sourceColumn: estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column metodo_pago
+		dataType: string
+		lineageTag: c12a677e-57f1-4364-8aeb-36d80bee9e9e
+		summarizeBy: none
+		sourceColumn: metodo_pago
+
+		annotation SummarizationSetBy = Automatic
+
+	column cliente_id
+		dataType: int64
+		formatString: 0
+		lineageTag: a0988bf1-780c-43af-be5b-c1a254824798
+		summarizeBy: sum
+		sourceColumn: cliente_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_documento
+		dataType: string
+		lineageTag: f850aebf-605d-4cc6-8c42-f1f9f4cf42a6
+		summarizeBy: none
+		sourceColumn: num_documento
+
+		annotation SummarizationSetBy = Automatic
+
+	column nombre_cliente
+		dataType: string
+		lineageTag: 66e38a6b-e058-442c-94fd-406e312c2b95
+		summarizeBy: none
+		sourceColumn: nombre_cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: 6ece679e-c217-4df5-8df8-6de11fc6c51a
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column detalle_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 9c4ccb7d-83cf-463e-ac27-9eeb6db450c5
+		summarizeBy: sum
+		sourceColumn: detalle_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column tienda
+		dataType: string
+		lineageTag: 4d406bab-fda3-4792-af50-9ec156aa7be5
+		summarizeBy: none
+		sourceColumn: tienda
+
+		annotation SummarizationSetBy = Automatic
+
+	column categoria
+		dataType: string
+		lineageTag: f996b0bc-4963-4f91-8d5a-1c71b2e82ee4
+		summarizeBy: none
+		sourceColumn: categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column subcategoria
+		dataType: string
+		lineageTag: d224c938-b898-46e3-a289-1d3135192c98
+		summarizeBy: none
+		sourceColumn: subcategoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column producto
+		dataType: string
+		lineageTag: e8656291-558e-4911-b24f-ad97fbcb21b0
+		summarizeBy: none
+		sourceColumn: producto
+
+		annotation SummarizationSetBy = Automatic
+
+	column unidades
+		dataType: int64
+		formatString: 0
+		lineageTag: 7b19fe35-58cc-4a72-bfdc-d83edb131bc8
+		summarizeBy: sum
+		sourceColumn: unidades
+
+		annotation SummarizationSetBy = Automatic
+
+	column subtotal
+		dataType: double
+		lineageTag: d1587b93-693a-478b-8f77-1349fec5ca18
+		summarizeBy: sum
+		sourceColumn: subtotal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fecha_carga
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 34b672e0-2b20-48e3-8b6e-d59822ebd0e4
+		summarizeBy: none
+		sourceColumn: fecha_carga
+
+		variation Variación
+			isDefault
+			relationship: 9ff24a0b-be55-4b24-8181-b1f372bf37df
+			defaultHierarchy: LocalDateTable_39f81955-34dd-49d4-bced-3b3b02fc1545.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Fact_Compras = m
+		mode: import
+		source =
+				let
+				    Origen = Databricks.Catalogs("adb-7405610965921124.4.azuredatabricks.net", "/sql/1.0/warehouses/42e89d0d9b213a10", [Catalog="workspace", Database="salesstore", QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation="2.0", MetricViewBiCompatibilityMode=null]),
+				    gold_fact_compras_salesstore_workspace_Table = Origen{[Item="gold_fact_compras",Schema="salesstore",Catalog="workspace",Kind="Table"]}[Data]
+				in
+				    gold_fact_compras_salesstore_workspace_Table
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegación
+
