@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Reporte Compras"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7de146e1-9108-4b01-9680-89afb078d8d5"
+  }
+}
