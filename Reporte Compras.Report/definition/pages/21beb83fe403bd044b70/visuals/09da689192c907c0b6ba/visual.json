@@ -6,7 +6,7 @@
     "y": 22.167487684729064,
     "z": 1,
     "height": 38.128078817733993,
-    "width": 299.70443349753697,
+    "width": 336.94581280788179,
     "tabOrder": 1
   },
   "visual": {
@@ -19,7 +19,11 @@
               {
                 "textRuns": [
                   {
-                    "value": "Reporte de Cadena de Suministro"
+                    "value": "Reporte de Cadena de Suministro",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "16pt"
+                    }
                   }
                 ]
               }
