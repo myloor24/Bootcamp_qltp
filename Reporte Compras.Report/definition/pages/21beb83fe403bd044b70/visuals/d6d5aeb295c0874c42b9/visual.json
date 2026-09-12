@@ -1,0 +1,86 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "d6d5aeb295c0874c42b9",
+  "position": {
+    "x": 20.39408866995074,
+    "y": 145.41871921182266,
+    "z": 2,
+    "height": 543.54679802955661,
+    "width": 524.03940886699513,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_Compras"
+                    }
+                  },
+                  "Property": "metodo_pago"
+                }
+              },
+              "queryRef": "Fact_Compras.metodo_pago",
+              "nativeQueryRef": "metodo_pago",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Fact_Compras"
+                        }
+                      },
+                      "Property": "factura"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "CountNonNull(Fact_Compras.factura)",
+              "nativeQueryRef": "Cantidad de factura",
+              "displayName": "Cantidad de factura"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Fact_Compras"
+                      }
+                    },
+                    "Property": "factura"
+                  }
+                },
+                "Function": 5
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
